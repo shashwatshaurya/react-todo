@@ -1,0 +1,36 @@
+.list {
+    display: block;
+}
+
+p {
+    min-height: 45px;
+    background: #f5f6f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: larger;
+    margin-top: 8px;
+    overflow-wrap: normal;
+    hyphens: auto;
+}
+
+span {
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+span:hover {
+    color: rgb(0, 89, 255);
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translateX(3px) }
+    20% { transform: translateX(-3px) }
+    40% { transform: translateX(2px) }
+    60% { transform: translateX(-2px) }
+    80% { transform: translateX(1px) }
+    100% { transform: translateX(-1px) }    
+  }
