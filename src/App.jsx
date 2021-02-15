@@ -1,6 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 import ListItems from './ListItem';
+import simg from './assets/undraw_To_do_list_re_9nt7.svg';
 import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
@@ -60,6 +61,7 @@ class App extends Component {
 
     render(){
         return(
+            <div className="content">
             <div className="App">
                 <div className="header">
                     <form id="todo-form" onSubmit={this.addItem}>
@@ -79,6 +81,10 @@ class App extends Component {
                         deleteItem = {this.deleteItem} 
                     />
                 </div>
+            </div>
+            <div className="svgimg">
+                <img className="innerimg" src={simg} alt="todo app"/>
+            </div>
             </div>
         );
     };

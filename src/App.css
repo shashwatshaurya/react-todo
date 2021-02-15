@@ -7,6 +7,22 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.content {
+    display: flex;
+}
+
+.svgimg {
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    padding: 40px;
+    padding-left: 10rem;
+    border-left: 6px solid #01497c;
+    box-shadow: -7px 0 0px 0px #ee6c4d;
+    transform: scale(0.7);
+    margin-left: -20%;
+}
+
 .App {
     background-color: #1d3557;
     height: 520px;
@@ -16,7 +32,7 @@
     margin-right: auto;
     margin-top: 10%;
     border-radius: 20px;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 0 20px 5px #a8dadc;
     overflow-x: hidden;
 }
@@ -80,11 +96,19 @@ button:hover {
     .listBody {
         height: calc(100vh - 100px);
     }
+
+    .svgimg {
+        display: none !important;
+    }
 }
 
 @media (min-width: 420px) and (max-width: 760px) {
     .App {
         width: 80%;
+    }
+
+    .svgimg {
+        display: none !important;
     }
 }
 
@@ -92,11 +116,19 @@ button:hover {
     .App {
         width: 60%;
     }
+
+    .svgimg {
+        display: none !important;
+    }
 }
 
-@media (min-width:1001px) and (max-width: 1200px) {
+@media (min-width:1001px) and (max-width: 1600px) {
     .App {
         width: 44%;
+    }
+
+    .svgimg {
+        display: none !important;
     }
 }
 
