@@ -68,7 +68,7 @@ class App extends Component {
                         onChange={this.handleInput} />
                         <button type="submit">
                             <FontAwesomeIcon 
-                                className="faicons" 
+                                className="faicons plus" 
                                 icon='plus'/>
                         </button>
                     </form>

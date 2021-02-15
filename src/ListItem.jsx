@@ -18,16 +18,18 @@ function ListItems(props){
             </p>
         </div>
     });
-    const ticketNotVisibleState = {
-        transform: "translateX(200%)",
+    const ticketEnterVisibleState = {
+        transform: "translateX(-500px)",
         opacity: 1
     };
     return (
         <div>
             <FlipMove
-            leaveAnimation={{
-                from: {},
-                to: ticketNotVisibleState
+            staggerDelayBy={50}
+            easing="cubic-bezier(.12, .46, .14, 1.2)"
+            enterAnimation={{
+                from: ticketEnterVisibleState,
+                to: {}
             }}
             duration={300} 
             >

@@ -4,24 +4,26 @@
 
 p {
     min-height: 45px;
-    background: #f5f6f7;
+    background: #F5F3F4;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
     font-size: larger;
     margin-top: 8px;
+    border-radius: 5px;
     overflow-wrap: normal;
     hyphens: auto;
 }
 
 span {
+    color: #e63946;
     padding-left: 10px;
     margin-right: 5px;
 }
 
 span:hover {
-    color: rgb(0, 89, 255);
+    color: #d00000;
     animation: shake 0.5s;
     animation-iteration-count: 1;
 }
